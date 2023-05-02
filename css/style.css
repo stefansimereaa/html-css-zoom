@@ -8,6 +8,7 @@
 /* Generics */
 html{
     overflow: hidden;
+  
 }
 body{
     font-family: sans-serif;
@@ -20,6 +21,12 @@ body{
     margin-top: 150px;
 }
 
+.wrapper{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
 img{
     display: block;
 }
@@ -29,12 +36,10 @@ img{
 header{
     background-color: #222222;
     height: 100px;
-    position: fixed;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    position: fixed;
     z-index: 1;
     flex-shrink: 0;
 }
@@ -66,11 +71,7 @@ main{
     overflow-y: auto;
     background-color: black;
 }
-.wrapper{
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-}
+
 
 .row{
     display: flex;
@@ -78,10 +79,10 @@ main{
     gap: 30px;
     flex-wrap: wrap;
 }
-.column{
+.col{
     display: flex;
     flex-direction: column;
-    flex-basis: calc(100% / 7);
+    flex-basis: calc(100% / 7 -60px);
 }
 .card{
     position: relative;
@@ -103,7 +104,7 @@ main{
 
 
 /*Footer*/
-footer{
+footer {
     height: 100px;
     background-color: #222222;
     color: white;
@@ -112,7 +113,7 @@ footer{
     width: 100%;
     align-items: center;
     flex-shrink: 0;
-    overflow-y: auto;
+    z-index: 1;
     flex-basis: calc(100% / 3);
 }
 .personal-controls, .room-controls, .end-room, ul{
