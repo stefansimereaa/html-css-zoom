@@ -46,7 +46,7 @@ header{
 .buttons-header{
     display: flex;
     flex-direction: row;
-    width: 300px;
+
 }
 
 .buttons-header ul{
@@ -81,7 +81,7 @@ main{
 .col{
     display: flex;
     flex-direction: column;
-    flex-basis: calc(100% / 7 -60px);
+    flex-basis: calc(100% / 7 - 60px);
 }
 .card{
     position: relative;
