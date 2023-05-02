@@ -1,0 +1,166 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Generics */
+html{
+    overflow: hidden;
+}
+body{
+    font-family: sans-serif;
+}
+
+/*Utils*/
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+img{
+    display: block;
+}
+
+/*Header*/
+
+header{
+    background-color: #222222;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 1;
+    flex-shrink: 0;
+}
+
+.buttons-header{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+}
+
+.buttons-header ul{
+    list-style-type: none;
+}
+.buttons-header li{
+    padding: 5px;
+    display: inline-block;
+}
+.buttons-header a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+/*Main*/
+main{
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: black;
+}
+.wrapper{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(100% / 7);
+}
+.card{
+    position: relative;
+    margin-bottom: 5px;
+}
+.card-badges{
+    position: relative;
+}
+.badge{
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    bottom: 10px;
+}
+
+
+
+
+
+/*Footer*/
+footer{
+    height: 100px;
+    background-color: #222222;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    flex-shrink: 0;
+    overflow-y: auto;
+    flex-basis: calc(100% / 3);
+}
+.personal-controls, .room-controls, .end-room, ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+.personal-controls, .room-controls, .end-room, li{
+    padding: 5px;
+    display: inline-block;
+}
+.personal-controls, .room-controls, .end-room, a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.personal-controls{
+    display: flex;
+    width: 400px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.room-controls{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+.end-room{
+    display: flex;
+    width: 300px;
+    flex-direction: row;
+    background-color: grey;
+    justify-content: center;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.end-call{
+     color: red;
+     font-weight: bolder;
+     font-size: 20px;
+}
+.mute, .video, .invite, .participants, .pooling, .share-screen, .chat, .record, .rooms, .more{
+    display: flex;
+    flex-direction: column;
+}
